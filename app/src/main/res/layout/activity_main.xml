@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7E57C2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/b1"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#D31C1C"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:soundEffectsEnabled="false"
+            android:text="1"
+            android:textSize="24sp"
+            android:shadowColor="@color/cardview_dark_background"/>
+
+        <Button
+            android:id="@+id/b2"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#ffb224"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:soundEffectsEnabled="false"
+            android:text="2"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/b3"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#00FF00"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:soundEffectsEnabled="false"
+            android:text="3"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/b4"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#ffff24"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:soundEffectsEnabled="false"
+            android:text="4"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/b5"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#24ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:soundEffectsEnabled="false"
+            android:text="5"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/b4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/b6"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#0000d1"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:soundEffectsEnabled="false"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/b7"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#ff24ff"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:soundEffectsEnabled="false"
+            android:text="7"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/b8"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#1fa14b"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:soundEffectsEnabled="false"
+            android:text="8"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/b9"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#c26211"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:soundEffectsEnabled="false"
+            android:text="9"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/b10"
+            style="@style/Widget.AppCompat.Button"
+            android:background="#e1058f"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:onClick="click"
+            android:soundEffectsEnabled="false"
+            android:text="10"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PIANO"
+        android:textColor="@android:color/background_dark"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
